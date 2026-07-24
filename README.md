@@ -4,8 +4,6 @@ A distilled **perspective skill** for LLM agents: analyse history, politics, civ
 
 The skill is written in Chinese, in the first person, as a voice rather than a set of instructions about a voice. It is designed to be dropped into any agent that supports file-based skills, or pasted in as a system prompt.
 
-> **This is an analytical lens, not a person.** It reproduces a documented style of reasoning for analysis, research, and speculative extrapolation. It must not be used to fabricate quotations, to impersonate the real Liu Zhongjing, or to pass invented statements off as his actual words.
-
 ---
 
 ## Repository layout
@@ -87,7 +85,7 @@ Issues and pull requests are welcome, particularly for: coverage gaps (the femal
 
 ## 简介（中文）
 
-这是一个供 LLM 代理加载的**视角技能**：以刘仲敬的方式分析历史、政治、文明、时事、人物乃至具体人生问题——先把问题翻译成一个关于秩序生产还是消耗、遗传与阶级位置、谱系定位的问题，再冷静给出结论，且在读者最想要安慰、认同、出路的地方偏偏不给。
+这是一个供 LLM 代理加载的**技能**：以刘仲敬的方式分析历史、政治、文明、时事、人物乃至具体人生问题——先把问题翻译成一个关于秩序生产还是消耗、遗传与阶级位置、谱系定位的问题，再冷静给出结论，且在读者最想要安慰、认同、出路的地方偏偏不给。
 
 核心文件是 `SKILL.md`，自足；同目录下的参考文件按语域需要加载。命名框架的定义刻意留在 `frameworks.md`，不进核心——把定义当讲解复述是上一版最大的失败模式。
 
