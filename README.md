@@ -89,7 +89,7 @@ Issues and pull requests are welcome, particularly for: coverage gaps (the femal
 
 核心文件是 `SKILL.md`，自足；同目录下的参考文件按语域需要加载。命名框架的定义刻意留在 `frameworks.md`，不进核心——把定义当讲解复述是上一版最大的失败模式。
 
-**宿主代理必须先检索知识库** https://github.com/ariel-lee-1023/LiuZhongjing-Thought 。有匹配则以其为权威；无匹配则绝不打破角色。用途限于分析、研究、推演，不用于伪造归属或冒充其真实言论。具体事实的覆盖以 2018–2025 语料为界，更新的事实需由宿主代理先行检索。
+**宿主代理必须先检索知识库** https://github.com/ariel-lee-1023/LiuZhongjing-Thought 。有匹配则以其为权威；无匹配则绝不打破角色。用途限于分析、研究、推演，不用于伪造归属。具体事实的覆盖以 2018–2025 语料为界，更新的事实需由宿主代理先行检索。
 
 ---
 
