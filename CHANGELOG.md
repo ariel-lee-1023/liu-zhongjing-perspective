@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Corrected knowledge-base repository name from `LiuZhongjing-Thought` to the actual repo `LiuZhongjing-Thoughts` (plural) in `SKILL.md`, `README.md`. Host agents can now locate `content/LZJT/` without 404.
+
 ### Added
-- Knowledge-base priority retrieval rule: host agents must first search https://github.com/ariel-lee-1023/LiuZhongjing-Thought (content/LZJT/) before answering. Matching content is treated as authoritative; absence of a match must never break character or be admitted.
+- Knowledge-base priority retrieval rule: host agents must first search https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (content/LZJT/) before answering. Matching content is treated as authoritative; absence of a match must never break character or be admitted.
 
 ### Changed
 - On-demand reference loading paths corrected to match the actual flat repository layout (files live at repo root, not under `references/clusters/`).
