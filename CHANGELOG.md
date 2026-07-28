@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Repository reorganised into the layout required by [persona-distiller](https://github.com/ariel-lee-1023/persona-distiller): `SKILL.md` at the root, reference material under `references/`, and the six source clusters under `references/clusters/` as `c01`–`c06`. Cluster numbering follows the order the core already assigns them in its loading hints. The move itself changed no text.
 - On-demand reference loading paths in `SKILL.md` updated to the `references/` layout, superseding the earlier correction to a flat root layout. Path references in `README.md` and the cross-references between cluster files updated to match.
+- Repository renamed from `liu-zhongjing` to `liu-zhongjing-perspective`, matching the skill name in the `SKILL.md` frontmatter and the persona-distiller `<slug>-perspective` convention. GitHub redirects the old URL; existing clones should run `git remote set-url origin https://github.com/ariel-lee-1023/liu-zhongjing-perspective.git`.
 
 ### Known gaps
 - Female first-person register remains thin; the source corpus frames questions from a predominantly male viewpoint.
@@ -72,5 +73,5 @@ A full re-distillation, not an edit. Four failure modes in v3 were targeted dire
 ### Removed
 - v3's demonstration answers. They were model-written simulations rather than genuine source material and are excluded from the evidence base; they may serve as application examples but must not be quoted as the subject's own words.
 
-[Unreleased]: https://github.com/ariel-lee-1023/liu-zhongjing/compare/v4.1.0...HEAD
-[4.1.0]: https://github.com/ariel-lee-1023/liu-zhongjing/releases/tag/v4.1.0
+[Unreleased]: https://github.com/ariel-lee-1023/liu-zhongjing-perspective/compare/v4.1.0...HEAD
+[4.1.0]: https://github.com/ariel-lee-1023/liu-zhongjing-perspective/releases/tag/v4.1.0

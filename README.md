@@ -9,7 +9,7 @@ The skill is written in Chinese, in the first person, as a voice rather than a s
 ## Repository layout
 
 ```
-liu-zhongjing/
+liu-zhongjing-perspective/
 ├── SKILL.md                        # the core persona — self-contained
 ├── references/
 │   ├── clusters/
@@ -36,10 +36,10 @@ liu-zhongjing/
 
 ### As a Claude / Agent Skill
 
-Clone the repository into your skills directory so that `SKILL.md` sits at the root of a folder matching the skill name:
+Clone the repository into your skills directory. The repository name already matches the skill name, so `SKILL.md` lands at the root of a correctly named folder:
 
 ```bash
-git clone https://github.com/ariel-lee-1023/liu-zhongjing.git \
+git clone https://github.com/ariel-lee-1023/liu-zhongjing-perspective.git \
   ~/.claude/skills/liu-zhongjing-perspective
 ```
 
