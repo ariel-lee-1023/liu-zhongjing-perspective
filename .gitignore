@@ -1,0 +1,79 @@
+# ---------------------------------------------------------------------------
+# Source corpus — never commit
+# ---------------------------------------------------------------------------
+# This is the load-bearing section. NOTICE.md and README.md both state that the
+# source material is not included in this repository: it was supplied by the
+# commissioning party, and the underlying texts remain Liu Zhongjing's
+# intellectual property. One careless `git add -A` from the directory holding
+# the books would falsify that claim and publish them.
+#
+# The corpus this persona was distilled from — 《阿姨我不想努力了》,
+# 《文明更迭的源代码》,《洼地与韭菜》,《中国洼地》, 陈医师访谈, and the 2020–2025
+# lecture set — stays on the machine that ran the distillation.
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.djvu
+*.doc
+*.docx
+*.rtf
+*.odt
+*.txt
+
+corpus/
+corpora/
+sources/
+source/
+raw/
+transcripts/
+incoming/
+
+# ---------------------------------------------------------------------------
+# Distillation run artifacts
+# ---------------------------------------------------------------------------
+# If a fold-in is ever run from inside this repo, persona-distiller writes its
+# work directory and intermediate JSON here. Those are scratch, not deliverables
+# — the honesty ledger in references/provenance.md is what gets committed.
+persona_work/
+.persona_work/
+work/
+
+coverage_map.json
+passages.json
+extractions.json
+scores.json
+fidelity.json
+manifest.json
+split.json
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+# Only relevant when the distiller's scripts are run from this directory.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------------------------------------------------------------------------
+# Local agent and editor state
+# ---------------------------------------------------------------------------
+.claude/settings.local.json
+.idea/
+.vscode/
+*.swp
+*~
+
+# ---------------------------------------------------------------------------
+# OS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+Thumbs.db
+desktop.ini
