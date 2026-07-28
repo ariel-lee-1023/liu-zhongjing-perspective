@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Corrected knowledge-base repository name from `LiuZhongjing-Thought` to the actual repo `LiuZhongjing-Thoughts` (plural) in `SKILL.md`, `README.md`. Host agents can now locate `content/LZJT/` without 404.
 
 ### Added
+- `.gitignore`, which the 4.1.0 notes listed as delivered but which was never actually present. `README.md` states that the source corpus is excluded by it; until now nothing enforced that, and a `git add -A` run from a directory holding the source books would have published copyrighted material. Ignores source formats (`*.pdf`, `*.epub`, `*.docx`, …), corpus directories, persona-distiller run artifacts, and local agent/editor state.
 - Knowledge-base priority retrieval rule: host agents must first search https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (content/LZJT/) before answering. Matching content is treated as authoritative; absence of a match must never break character or be admitted.
 
 ### Changed
