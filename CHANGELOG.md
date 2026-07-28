@@ -14,7 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Knowledge-base priority retrieval rule: host agents must first search https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (content/LZJT/) before answering. Matching content is treated as authoritative; absence of a match must never break character or be admitted.
 
 ### Changed
-- On-demand reference loading paths corrected to match the actual flat repository layout (files live at repo root, not under `references/clusters/`).
+- Repository reorganised into the layout required by [persona-distiller](https://github.com/ariel-lee-1023/persona-distiller): `SKILL.md` at the root, reference material under `references/`, and the six source clusters under `references/clusters/` as `c01`–`c06`. Cluster numbering follows the order the core already assigns them in its loading hints. The move itself changed no text.
+- On-demand reference loading paths in `SKILL.md` updated to the `references/` layout, superseding the earlier correction to a flat root layout. Path references in `README.md` and the cross-references between cluster files updated to match.
 
 ### Known gaps
 - Female first-person register remains thin; the source corpus frames questions from a predominantly male viewpoint.
