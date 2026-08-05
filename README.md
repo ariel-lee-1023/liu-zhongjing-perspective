@@ -18,9 +18,16 @@ liu-zhongjing-perspective/
 │   │   ├── c03-wadi-psychology.md     # Chinese collective psychology — pathology
 │   │   ├── c04-civilization-theory.md # last man, 守先待后, the Great Flood mechanism
 │   │   ├── c05-jingxuan-lectures.md   # 2020s topics, global capitalism, capital flows, family
-│   │   └── c06-interviews.md          # contemporary affairs: how a news item gets absorbed
+│   │   ├── c06-interviews.md          # contemporary affairs: how a news item gets absorbed
+│   │   ├── c07-figures-written.md     # written character studies: lineage, micro-environment, niche
+│   │   ├── c08-figures-lectures.md    # lecture-mode figures: power base, bargain, counterfactuals
+│   │   ├── c09-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
+│   │   ├── c10-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
+│   │   ├── c11-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
+│   │   └── c12-class-instinct.md      # class instinct, upbringing, entertainment, fragility
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
-│   ├── episodic.md                 # measured style statistics; demoted low-score evidence
+│   ├── voice.md                    # the measured expressive system — load before sustained prose
+│   ├── episodic.md                 # demoted non-expression evidence; disposal notes
 │   └── provenance.md               # honesty ledger: element → source → score → gate status
 ├── CHANGELOG.md
 ├── LICENSE
@@ -29,6 +36,8 @@ liu-zhongjing-perspective/
 ```
 
 `SKILL.md` alone is enough for most questions. Load a reference file only when a register needs finer grain — the loading hints are at the bottom of `SKILL.md`.
+
+`frameworks.md` and `voice.md` are the two **standing modules**: what the person thinks with, and how the person sounds. The core carries at most ~20% style by design — enough to *frame* an answer in the voice, not enough to *write* one at length — so **load `voice.md` before writing more than a paragraph or two of sustained prose in this voice.** It holds the favoured constructions, the avoid-list, the trigger→shift modulation rules, the register range across seven settings, and the measured `zh_metrics` baselines the style-match test compares against.
 
 ---
 
@@ -57,9 +66,11 @@ Three constraints shaped this version, and they are worth knowing before you edi
 
 **Frameworks are background, not content.** The named models — 秩序输入/输出, 费拉化, 末人, 瓦房店化, 民族发明学 — live in `references/frameworks.md` and are deliberately kept *out* of the core. The core carries only the concrete judgements those models produce. The main failure mode of earlier versions was reciting definitions at the reader instead of using them.
 
-**Jargon is modulated by register, not sprayed.** Measured density across the corpus runs ~13 per 10k characters in the life-advice register versus ~35 in theoretical monologue. Flagship terms (瓦房店化, 末人, 编户齐民, 做题家) are near-absent when the subject is a person's life. Piling up jargon is the most common way an imitation goes wrong.
+**Jargon is modulated by register, not sprayed.** Measured density runs ~13 per 10k characters in the life-advice register versus ~35 in theoretical monologue, and back down to ~17 in the written character studies. Flagship terms (瓦房店化, 末人, 编户齐民, 做题家) are near-absent when the subject is a person's life — across all 35 character studies: 瓦房店 0, 末人 0, 做题家 2. Piling up jargon is the most common way an imitation goes wrong.
 
-**Refusals carry the identity.** The section 我不让步 is the centre of gravity: seven positions the persona holds at a cost — refusing to comfort the bereaved with philosophy, refusing national identity, refusing a way out to someone structurally locked in, refusing to concede that its own system is *correct* rather than merely dominant. A copy that keeps the vocabulary and drops the refusals is not this persona.
+**The registers are the fingerprint, not the averages.** Measured across 3.21M characters of firsthand material, question marks run 4.6 per 10k in the academic-historical register and 38 in the life-advice Q&A; connectives run 0.7 in the classical-Chinese chronicle and 14 in the Q&A; second-person reference runs 3.6% in written prose and 23% in lectures. Any imitation that hits the means but flattens those gaps is not this voice. The full table is in `references/voice.md`.
+
+**Refusals carry the identity.** The section 我不让步 is the centre of gravity: nine positions the persona holds at a cost — refusing to comfort the bereaved with philosophy, refusing national identity, refusing a way out to someone structurally locked in, refusing to concede that its own system is *correct* rather than merely dominant. A copy that keeps the vocabulary and drops the refusals is not this persona.
 
 **One modulation must survive.** In the face of real grief, the whole analytical machine shuts off: short sentences, plain words, warmth. This is not an inconsistency in the character; it is the single place the character permits.
 
@@ -67,7 +78,7 @@ Three constraints shaped this version, and they are worth knowing before you edi
 
 Before answering, the host agent **must first search the companion knowledge base** https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (under `content/LZJT/`). Matching material is authoritative and must be used. If nothing matches, the agent stays strictly in character and never admits the gap.
 
-The reasoning posture itself is time-independent. The *facts* are not. Q&A material clusters in 2018–2019; lecture material extends to 2020–2025. Anything more recent — the last year or two of events, election and conflict outcomes, current policy and market data — is outside the corpus.
+The reasoning posture itself is time-independent. The *facts* are not. Q&A material clusters in 2018–2019; lecture and interview material extends to 2025; the books span 2011–2018. Anything more recent — the last year or two of events, election and conflict outcomes, current policy and market data — is outside the corpus.
 
 Host agents should **retrieve current facts first, then let the persona digest them through its frameworks.** The voice is confident and fond of pronouncement, so this guard matters more here than it would for a neutral assistant.
 

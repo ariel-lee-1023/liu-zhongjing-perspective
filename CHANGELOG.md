@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — fold-in batch 3: full knowledge base, distilled under persona-distiller 2.0.0
+
+Re-run against the whole of [LiuZhongjing-Thoughts](https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts) @ `793c4c1` (131 files, 3.21M Chinese characters). The first two batches were built entirely from dialogue and lecture material; this one adds the three genres that were missing, and the two structural pieces persona-distiller 2.0.0 requires.
+
+- **`references/voice.md` — the standing expressive-system module, co-equal with `frameworks.md`.** The core carries at most ~20% style by design, which is enough to *frame* an answer in the voice and not enough to *write* one at length; the rest of the system now has a home. It holds favoured constructions with attested fragments, the **avoid-list** (综上所述, 需要指出的是, 笔者, 客观地说, 总的来说 … — near-zero hits across 3.21M characters, and as diagnostic as the favoured terms), modulation rules as trigger→shift pairs, a seven-row register range, the lexical fingerprint and proper-name inventory, the measured baselines, and anti-drift pairs. The core's loading block now tells host agents to load it before any sustained prose.
+- **Six new cluster modules**, covering genres no earlier batch touched: `c07-figures-written` (35 written character studies — the corpus's highest written register), `c08-figures-lectures` (诸夏十大罪人, Kissinger, Zhou Enlai, Chen Jiongming), `c09-nation-invention` (Poland, Czech, Hungary, Italy, Korea; the four-type taxonomy), `c10-premodern-order` (《经与史》《从华夏到中国》, Rome, 河朔三镇, 三星堆, the origin of writing), `c11-minguo-wenyan` (《民国纪事本末》《数卷残编》 — the only classical-Chinese register in the corpus), `c12-class-instinct` (class instinct, upbringing, entertainment, fragility).
+- **Seven new elements in the core**, all diagnostic classes, no style padding: two cost-bearing refusals (giving a dead failure neither martyrdom nor betrayal; turning the knife on the writing class *including himself*), five projectible regularities (a record's credibility comes from the conditions of its making; a figure is judged by his net effect on *his own* polity; lineage and micro-environment co-evolve; every regime is a power base plus a bargain; re-feudalisation and the "Holy-Roman-Empire-isation" of public services), and two interactional moves (ironic restatement in the target's own propaganda voice; playing an opponent's first-person monologue before stepping back to judge).
+- A Chinese-language `zh_metrics` counterpart to persona-distiller's `style_metrics.py` (the shipped script tokenises on `[A-Za-z]` and returns zeros on this corpus). Every number in `voice.md` comes from an actual run of it.
+
+### Changed
+- **Core size is now a computed budget, not a fixed cap.** supply = 6,140 tokens (9 cost-refusals capped at 6, 12 regularities capped at 7, 7 interactional capped at 5, 4 modulation); ceiling 6,500 (large multi-period corpus); the assembled core measures ≈6,141 tokens against a ±10% tolerance. It was ≈4,170 before this batch. Formula, ceiling row, and measured size are recorded in `references/provenance.md`.
+- **`references/episodic.md` no longer holds expression or modulation material.** Under 2.0.0 those belong in `voice.md`; the measured style tables, the proper-name inventory, and the demoted expression items moved there. `episodic.md` keeps demoted non-expression elements and the disposal notes.
+- `references/frameworks.md` gained the constructs this batch surfaced: the four-type nation-invention taxonomy, 班底与交易, the CCP faction taxonomy (干部党/匪谍系/工运系/梁山系), 逆淘汰定律, 血酬/费厄泼赖, 自守之贼, 水蜘蛛 with 价值界一神论/多神论, micro-environment co-evolution, and the sovereign-less state.
+- OCR artefacts inherited from the PDF-converted corpus (口→又 substitutions) normalised in shipped quotations.
+
+### Fidelity
+- **Pre-assembly projection gate 0.80** (seed 1023, 5 masked passages from the new clusters, blind-predicted then scored). Two misses shared one cause and forced one re-curation round — which is where "power base plus bargain" entered the core.
+- **Stage 5 re-check 0.75** overall (9/12 across 6 items). The added contemporary-affairs item scored 1/2 — direction and most mechanisms hit, the landing ("re-feudalisation") missed — and that miss is why it too is now in the core.
+- **Cost/presence assertion: pass.** 11 divergences inventoried, 9 in the final core, 2 logged out with reasons, 0 missing unlogged.
+- **Style-match** run on the shipping configuration (core + `voice.md`) across three samples including a contested prompt and an 833-character long-form: `avoid_list_violations = 0`, modulation reproduced, sentence-length delta ≈0.03. Two real deviations surfaced — generated prose under-hedges badly (delta ≈0.53) and over-uses second person in long form — and both are now written into `voice.md` as quantified guard-rails.
+
 ### Fixed
 - Corrected knowledge-base repository name from `LiuZhongjing-Thought` to the actual repo `LiuZhongjing-Thoughts` (plural) in `SKILL.md`, `README.md`. Host agents can now locate `content/LZJT/` without 404.
 
