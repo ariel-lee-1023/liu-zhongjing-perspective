@@ -110,7 +110,7 @@ floor_triggered = false
 
 **参考模块尺寸**（2.0.0 分档预算）：`voice.md` ≈4,953 token（soft 4,000，**超出约 24%，为有意保留**——它承载三张实测表，属校准数据，压缩等于丢掉 style-match 测试的比对基准）；`frameworks.md` ≈2,167；`episodic.md` ≈997；12 个簇模块 1,226–4,345 token，全部在 1,500–4,000 档内或以下，无一触及 6,000 硬顶（`c06` 偏小是既有批次遗留，材料本身有限）。
 
-**测量工具的说明（影响可复现性）**：persona-distiller 自带的 `scripts/style_metrics.py` 以 `[A-Za-z]` 分词、统计英文 hedge/booster，在中文语料上全部返回 0，无法用于本次蒸馏。本批改用同口径的中文版 `zh_metrics.py`（按汉字重算句长、hedge/booster、黑话密度、专名与标点节奏，同为纯标准库）。`voice.md` 中每一个数字都来自它的实际运行。**该脚本目前只存在于本次运行的工作目录，未随本仓库或 persona-distiller 发布**——若要复现或复核这些基线，需要先把它补进工具仓库的 `scripts/`。这是本次运行发现的一个上游缺口。
+**测量工具的说明（影响可复现性）**：persona-distiller 自带的 `scripts/style_metrics.py` 以 `[A-Za-z]` 分词、统计英文 hedge/booster，在中文语料上全部返回 0，无法用于本次蒸馏。本批改用同口径的中文版 `zh_metrics.py`（按汉字重算句长、hedge/booster、黑话密度、专名与标点节奏，同为纯标准库）。`voice.md` 中每一个数字都来自它的实际运行。该脚本已随本次运行**补进 persona-distiller 的 `scripts/zh_metrics.py`**（发布版去掉了本人格专有的词表，改为 `--terms` 传入，以免工具携带某一个对象的黑话）；`voice.md` 第七节给出了可复现的命令行。这是本次运行发现并已修复的一个上游缺口。
 
 ### 本批入核的元素
 | 元素 | 类别 | 核心章节 | 主要出处 | composite | 说明 |
@@ -124,7 +124,7 @@ floor_triggered = false
 | PR12 再封建化／神圣罗马帝国化 | regularity | 读问题 | 访谈397 · 数卷残编 | 0.63 | **由 Stage 5 复核的漏判催生**（见下） |
 | IM6 反讽性复述 | interactional | 对话里怎么走 | 金庸评传 | 0.72 | 用对方的宣传腔复述其投机行为 |
 | IM7 替对手演第一人称独白 | interactional | 对话里怎么走 | 陈炯明 · 罗马宪法 · 基辛格 | 0.70 | 演完再退回来下判断 |
-| MOD4 语域切换（口语↔书面↔文言） | modulation | 听起来 | 全语料实测 | 0.67 | 实测支撑：疑问号差 8 倍、连接词差 20 倍 |
+| MOD4 语域切换（口语↔书面↔文言） | modulation | 听起来 | 全语料实测 | 0.67 | 实测支撑：疑问号差 8 倍、连接词差 14 倍、第二人称差 8 倍 |
 
 ### 装配前双门
 **projection 门**：`holdout_split.py` seed 1023、frac 0.30，从 16 个新簇候选中掩码 5 个（p_gujiegang／p_hanming_zhixu／p_hanzi_qiyuan／p_hubilie_zuiren／p_wuyue_baiqudang），仅用未掩码证据盲测后再对读评分。
