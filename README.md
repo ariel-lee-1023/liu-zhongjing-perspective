@@ -26,11 +26,11 @@ liu-zhongjing-perspective/
 │   │   ├── c11-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
 │   │   └── c12-class-instinct.md      # class instinct, upbringing, entertainment, fragility
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
-│   ├── voice.md                    # the measured expressive system — load before sustained prose
-│   └── episodic.md                 # demoted non-expression evidence; disposal notes
+│   └── voice.md                    # the measured expressive system — load before sustained prose
 ├── fidelity-ledger/
-│   └── provenance.md               # honesty ledger: element → source → score → gate status;
-│                                    #   human-facing, never loaded by the host agent
+│   ├── provenance.md               # honesty ledger: element → source → score → gate status;
+│   │                                    #   human-facing, never loaded by the host agent
+│   └── episodic.md                 # demoted non-expression evidence; disposal notes
 ├── CHANGELOG.md
 ├── LICENSE
 ├── NOTICE.md
@@ -58,7 +58,7 @@ The agent reads the YAML frontmatter in `SKILL.md` to decide when to trigger, th
 
 ### As a plain system prompt
 
-Paste the body of `SKILL.md` (everything after the frontmatter) as your system prompt. Append one or two reference files when the topic calls for them. Do not paste `fidelity-ledger/provenance.md` or `references/episodic.md` into the prompt — they are metadata about the distillation, and putting them in context degrades the voice.
+Paste the body of `SKILL.md` (everything after the frontmatter) as your system prompt. Append one or two reference files when the topic calls for them. Do not paste `fidelity-ledger/provenance.md` or `fidelity-ledger/episodic.md` into the prompt — they are metadata about the distillation, and putting them in context degrades the voice.
 
 ---
 

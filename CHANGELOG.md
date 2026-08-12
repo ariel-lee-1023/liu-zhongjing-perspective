@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `fidelity-ledger/provenance.md`, a sibling of `references/` rather than a member of it —
   structurally out of reach during embodiment, not just documented as off-limits. Content
   unchanged; only the path moved. `README.md` updated to point at the new location.
+- **`episodic.md` moved out of `references/` into `fidelity-ledger/`, alongside `provenance.md`.**
+  Low-scoring but attested corroborating material is not reasoning the host agent should load
+  mid-embodiment, so it belongs with the honesty ledger rather than the host-agent-facing package.
+  Content unchanged; only the path moved, to `fidelity-ledger/episodic.md`. `SKILL.md` and
+  `README.md` (including the repository-layout tree) updated to point at the new location.
 
 ### Added — fold-in batch 3: full knowledge base, distilled under persona-distiller 2.0.0
 

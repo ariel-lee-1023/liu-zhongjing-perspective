@@ -32,7 +32,7 @@
 | PP1 秩序生产vs消耗(引力主题) | 反复回到 | preoccupation | 全簇 | 0.62 | — | — |
 | PP2 士大夫言行不一鄙夷 | 反复回到 | preoccupation | 源码 · wadi · ayi | 0.55 | — | — |
 
-降级到 references：PR7(比例感,与PR1重叠) · EX1(长句均值) · EX2(专名密度,已折入voice rule) · EX3(连接词)。见 `episodic.md`。
+降级到 fidelity-ledger/episodic.md：PR7(比例感,与PR1重叠) · EX1(长句均值) · EX2(专名密度,已折入voice rule) · EX3(连接词)。见 `episodic.md`。
 
 ## 保真测试结果
 - **Projection 门（装配前）**：seed 42、frac 0.14，掩码 4 项（p_ayi_q1 养生、p_ayi_q138 流亡痛苦、p_ayi_q158 求安者亡、p_yuan_mo 末人）。仅用未掩码证据推断，4/4 命中立场+推理 → **1.00**。0 次再纠正。
