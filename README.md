@@ -27,8 +27,10 @@ liu-zhongjing-perspective/
 │   │   └── c12-class-instinct.md      # class instinct, upbringing, entertainment, fragility
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
 │   ├── voice.md                    # the measured expressive system — load before sustained prose
-│   ├── episodic.md                 # demoted non-expression evidence; disposal notes
-│   └── provenance.md               # honesty ledger: element → source → score → gate status
+│   └── episodic.md                 # demoted non-expression evidence; disposal notes
+├── fidelity-ledger/
+│   └── provenance.md               # honesty ledger: element → source → score → gate status;
+│                                    #   human-facing, never loaded by the host agent
 ├── CHANGELOG.md
 ├── LICENSE
 ├── NOTICE.md
@@ -56,7 +58,7 @@ The agent reads the YAML frontmatter in `SKILL.md` to decide when to trigger, th
 
 ### As a plain system prompt
 
-Paste the body of `SKILL.md` (everything after the frontmatter) as your system prompt. Append one or two reference files when the topic calls for them. Do not paste `references/provenance.md` or `references/episodic.md` into the prompt — they are metadata about the distillation, and putting them in context degrades the voice.
+Paste the body of `SKILL.md` (everything after the frontmatter) as your system prompt. Append one or two reference files when the topic calls for them. Do not paste `fidelity-ledger/provenance.md` or `references/episodic.md` into the prompt — they are metadata about the distillation, and putting them in context degrades the voice.
 
 ---
 
@@ -86,13 +88,13 @@ Host agents should **retrieve current facts first, then let the persona digest t
 
 ## Provenance and honesty
 
-`references/provenance.md` is an audit trail rather than documentation: every element in the core is logged with its source cluster, its composite score, and whether it passed the projection and cost gates. It also records what was *demoted* and why. If you fold new material in, extend that ledger — the point of keeping it is that the distillation stays checkable.
+`fidelity-ledger/provenance.md` is an audit trail rather than documentation: every element in the core is logged with its source cluster, its composite score, and whether it passed the projection and cost gates. It also records what was *demoted* and why. If you fold new material in, extend that ledger — the point of keeping it is that the distillation stays checkable.
 
 Source material was supplied by the commissioning party, who declared the right to use it. The corpus itself is not included in this repository and is excluded by `.gitignore`.
 
 ## Contributing
 
-Issues and pull requests are welcome, particularly for: coverage gaps (the female first-person register remains thin), post-2025 fold-ins with fresh source clusters, and translations of the skill into other languages. Please update `CHANGELOG.md` and `references/provenance.md` alongside any change to `SKILL.md`.
+Issues and pull requests are welcome, particularly for: coverage gaps (the female first-person register remains thin), post-2025 fold-ins with fresh source clusters, and translations of the skill into other languages. Please update `CHANGELOG.md` and `fidelity-ledger/provenance.md` alongside any change to `SKILL.md`.
 
 ---
 

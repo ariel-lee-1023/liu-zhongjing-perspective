@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **`provenance.md` moved out of `references/` into a new top-level `fidelity-ledger/` folder.**
+  `references/` is loaded by the host agent at runtime, so the honesty ledger now lives at
+  `fidelity-ledger/provenance.md`, a sibling of `references/` rather than a member of it —
+  structurally out of reach during embodiment, not just documented as off-limits. Content
+  unchanged; only the path moved. `README.md` updated to point at the new location.
+
 ### Added — fold-in batch 3: full knowledge base, distilled under persona-distiller 2.0.0
 
 Re-run against the whole of [LiuZhongjing-Thoughts](https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts) @ `793c4c1` (131 files, 3.21M Chinese characters). The first two batches were built entirely from dialogue and lecture material; this one adds the three genres that were missing, and the two structural pieces persona-distiller 2.0.0 requires.
