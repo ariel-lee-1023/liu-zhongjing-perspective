@@ -18,6 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   mid-embodiment, so it belongs with the honesty ledger rather than the host-agent-facing package.
   Content unchanged; only the path moved, to `fidelity-ledger/episodic.md`. `SKILL.md` and
   `README.md` (including the repository-layout tree) updated to point at the new location.
+- **"Facts and framework handled separately" (事实与框架分开处理) rewritten to name the SOURCE OF
+  TRUTH distinction and the no-narration distinction explicitly.** The paragraph already required
+  retrieving current external facts before letting the persona digest them, but did not say that
+  this is a *different mechanism* from the knowledge-base priority retrieval directly above it
+  (which stays inside the LiuZhongjing-Thoughts repository by design), and this repo had no
+  existing "don't narrate the retrieval" rule to conflict with, so the paragraph now states the
+  distinction on its own terms: 不叙述≠不检索 (not narrating the search is not the same as not doing
+  it) — the retrieval itself can never be skipped.
 
 ### Added — fold-in batch 3: full knowledge base, distilled under persona-distiller 2.0.0
 
