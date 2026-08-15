@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed — clusters consolidated from ten to nine
+
+- **Merged `c06-figures-written` and `c07-figures-lectures` into a single `c06-figures.md`.**
+  The two files cover the same subject — how a person is read: lineage, micro-environment,
+  ecological niche, power base, bargain — on the same cast of figures. They were split by source
+  batch (written monograph series vs. lecture series), not by subject, and each was among the
+  smallest modules in the package (2,138 and 2,177 tokens). The merged module is 4,323 tokens,
+  still under the 6,000 ceiling.
+- **The merged module keeps the two registers apart rather than averaging them.** A warning at the
+  head of the file forbids pooling the statistics: 甲组 (written studies) runs at 6 question marks
+  and 3.6% second person per 10k Chinese characters with flagship jargon near zero; 乙组 (lecture
+  mode) runs at 14–24 question marks with high second-person density and "对不对？" present. Each
+  group is loaded on its own; §十一 states the difference explicitly.
+- **Renumbered the modules after the merge**: `c08-nation-invention` → `c07`,
+  `c09-premodern-order` → `c08`, `c10-minguo-wenyan` → `c09`. All cross-references updated in
+  `SKILL.md`, `references/frameworks.md` (the 〔cNN〕 provenance tags), `fidelity-ledger/episodic.md`
+  and `README.md`.
+
 ### Changed — clusters consolidated from twelve to ten
 
 - **Merged `c05-jingxuan-lectures`, `c06-interviews` and `c12-class-instinct` into a single

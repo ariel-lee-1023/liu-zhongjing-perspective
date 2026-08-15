@@ -19,11 +19,10 @@ liu-zhongjing-perspective/
 │   │   ├── c04-civilization-theory.md # last man, 守先待后, the Great Flood mechanism
 │   │   ├── c05-jingxuan-lectures.md   # contemporary application: news items, 2020s topics,
 │   │   │                              #   global capitalism, family, class instinct
-│   │   ├── c06-figures-written.md     # written character studies: lineage, micro-environment, niche
-│   │   ├── c07-figures-lectures.md    # lecture-mode figures: power base, bargain, counterfactuals
-│   │   ├── c08-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
-│   │   ├── c09-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
-│   │   └── c10-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
+│   │   ├── c06-figures.md             # character studies, two registers: written studies + lecture-mode
+│   │   ├── c07-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
+│   │   ├── c08-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
+│   │   └── c09-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
 │   └── voice.md                    # the measured expressive system — load before sustained prose
 ├── fidelity-ledger/
