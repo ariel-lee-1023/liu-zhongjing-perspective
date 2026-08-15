@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- **Third cluster merge: `c02-neiya-order` + `c08-premodern-order` → `c02-premodern-order.md`**
+  (3,032 + 2,033 → 5,282 est. tokens). Same reasoning skeleton — constitutional position before
+  name, order import/export, an armed band plus one bargain — split only by acquisition source
+  (the *China Lowland* 29-question appendix vs. the *Scripture and History* essays and lectures).
+  `c09-minguo-wenyan` renumbers to `c08-minguo-wenyan`; nine clusters become eight.
+- **The register gap in this merge is the widest of the three, and is again not averaged.**
+  Group A: 47 question marks per 10k Han characters (corpus maximum). Group B: 4.6 (corpus
+  minimum). The head of the file and §eleven both state the two sets separately and forbid
+  pooling them.
+- Updated references: the load list in `SKILL.md`, five 〔cNN〕 provenance tags in
+  `frameworks.md`, the tree in `README.md`, and the cluster pointers in `provenance.md`.
+  Batch 4b's `c09`/`c10` are left as the numbering of their time.
+
 ### Fixed
 
 - **`fidelity-ledger/episodic.md` had drifted into a second provenance file.** Against the

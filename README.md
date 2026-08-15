@@ -14,15 +14,14 @@ liu-zhongjing-perspective/
 ├── references/
 │   ├── clusters/
 │   │   ├── c01-ayi-life-advice.md     # anti-self-help life advice; the "machine off" warm register
-│   │   ├── c02-neiya-order.md         # Inner Asia and East Asian order — structure
+│   │   ├── c02-premodern-order.md     # order structure + classical/pre-modern constitutions, epigraphy
 │   │   ├── c03-wadi-psychology.md     # Chinese collective psychology — pathology
 │   │   ├── c04-civilization-theory.md # last man, 守先待后, the Great Flood mechanism
 │   │   ├── c05-jingxuan-lectures.md   # contemporary application: news items, 2020s topics,
 │   │   │                              #   global capitalism, family, class instinct
 │   │   ├── c06-figures.md             # character studies, two registers: written studies + lecture-mode
 │   │   ├── c07-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
-│   │   ├── c08-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
-│   │   └── c09-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
+│   │   └── c08-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
 │   └── voice.md                    # the measured expressive system — load before sustained prose
 ├── fidelity-ledger/
