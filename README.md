@@ -17,14 +17,13 @@ liu-zhongjing-perspective/
 │   │   ├── c02-neiya-order.md         # Inner Asia and East Asian order — structure
 │   │   ├── c03-wadi-psychology.md     # Chinese collective psychology — pathology
 │   │   ├── c04-civilization-theory.md # last man, 守先待后, the Great Flood mechanism
-│   │   ├── c05-jingxuan-lectures.md   # 2020s topics, global capitalism, capital flows, family
-│   │   ├── c06-interviews.md          # contemporary affairs: how a news item gets absorbed
-│   │   ├── c07-figures-written.md     # written character studies: lineage, micro-environment, niche
-│   │   ├── c08-figures-lectures.md    # lecture-mode figures: power base, bargain, counterfactuals
-│   │   ├── c09-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
-│   │   ├── c10-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
-│   │   ├── c11-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
-│   │   └── c12-class-instinct.md      # class instinct, upbringing, entertainment, fragility
+│   │   ├── c05-jingxuan-lectures.md   # contemporary application: news items, 2020s topics,
+│   │   │                              #   global capitalism, family, class instinct
+│   │   ├── c06-figures-written.md     # written character studies: lineage, micro-environment, niche
+│   │   ├── c07-figures-lectures.md    # lecture-mode figures: power base, bargain, counterfactuals
+│   │   ├── c08-nation-invention.md    # comparative nation-invention: Poland, Russia, 中华民族
+│   │   ├── c09-premodern-order.md     # classical & pre-modern constitutions, epigraphy, writing
+│   │   └── c10-minguo-wenyan.md       # Republican chronicle + the classical-Chinese register
 │   ├── frameworks.md               # precise definitions of named frameworks (lookup only)
 │   └── voice.md                    # the measured expressive system — load before sustained prose
 ├── fidelity-ledger/

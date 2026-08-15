@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed — clusters consolidated from twelve to ten
+
+- **Merged `c05-jingxuan-lectures`, `c06-interviews` and `c12-class-instinct` into a single
+  `c05-jingxuan-lectures`** ("contemporary application"). The three were one domain split across
+  three files by batch accident, not by subject: all three answer a present-day question — a news
+  item, a 2020s topic, or something from the reader's own life — by putting it back into a
+  structure. `c06` was also the smallest module in the package (1,226 tokens), too thin to justify
+  a separate load.
+- **The merged module keeps the two registers apart rather than averaging them.** The interview
+  material is dialogue (A3: frequent question marks, spoken connectives); the lecture and
+  monograph material is monologue (A2). A warning at the head of the file forbids pooling the two
+  sets of statistics and points at `voice.md` §八 rows A2/A3.
+- **Compressed to fit.** Raw concatenation came to ~7,480 est. tokens, over the 6,000 hard ceiling.
+  Cut to **5,993** by tightening quotations and dropping duplicated framing; no judgement, no
+  worked example and no quantified claim was removed.
+- **Renumbered the rest**: `c07`→`c06`, `c08`→`c07`, `c09`→`c08`, `c10`→`c09`, `c11`→`c10`. Every
+  cross-reference was updated — the loading map in `SKILL.md`, the eleven provenance tags in
+  `frameworks.md`, the sibling references inside `c07`/`c08`/`c10`, `episodic.md`, and the tree in
+  `README.md`. Two internal section pointers into `c05` were re-aimed at their new section numbers.
+  Historical batch records in `fidelity-ledger/provenance.md` and in the entries below keep the
+  numbering they were written with.
+
 ### Added — projection re-test on `c04` and the re-curation it forced
 
 - **Ran a held-out projection test on `c04` (post-hoc variant).** Batch 4 resized three clusters
