@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- **`fidelity-ledger/episodic.md` had drifted into a second provenance file.** Against the
+  persona-distiller admission test — *could a reader point to it as an event, something that
+  happened, was said, or was decided on a specific occasion?* — none of its four sections
+  qualified: three were regularities and judgements carrying composite scores, one was a
+  disposal note, one was a source-genre warning. All three kinds moved to `provenance.md`
+  (batch 6), where they belong. `episodic.md` was rewritten with the admission test and its two
+  exclusions (no concepts, no expression) at the head, and now holds only qualifying items.
+- The truncated sentence in `episodic.md` §three (subject lost in an earlier manual web edit)
+  is restored, in `provenance.md`.
+- `SKILL.md` no longer points the host at `episodic.md`. A never-loaded human-facing file has no
+  business being named in the embodiment context.
+
+### Known gaps
+
+- `episodic.md` is now short and honestly so. The corpus's concrete incidents are almost all
+  already cluster anchors, which the admission test excludes; what remains in scope is the
+  "he talks about himself, uncited by any cluster" class, and no dedicated pass has been run
+  for it.
+
+
 ## [5.0.0] - 2026-08-15
 
 Nothing new was distilled in this release. Everything here comes from running the assembled

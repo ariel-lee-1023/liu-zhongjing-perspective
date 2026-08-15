@@ -28,7 +28,7 @@ liu-zhongjing-perspective/
 ├── fidelity-ledger/
 │   ├── provenance.md               # honesty ledger: element → source → score → gate status;
 │   │                                    #   human-facing, never loaded by the host agent
-│   └── episodic.md                 # demoted non-expression evidence; disposal notes
+│   └── episodic.md                 # attested one-off happenings not used as cluster anchors
 ├── CHANGELOG.md
 ├── LICENSE
 ├── NOTICE.md
