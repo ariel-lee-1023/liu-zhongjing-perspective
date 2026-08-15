@@ -134,11 +134,6 @@ distribution has always been chosen by the distiller and is systematically skewe
   release's edits. Two consecutive batches now carry unretested changes.
 - `SKILL.md`, `frameworks.md` and `voice.md` all sit between 5,996 and 5,999 against a 6,000
   ceiling. All three are at the cap simultaneously: nothing can be added without deleting first.
-- The cross-corpus consistency check is still not done, and the reliability of the new `定判`
-  entries depends on it.
-- Female first-person register remains thin (carried since batch 4).
-- Trunk-hit rate was never recorded separately before this release, so earlier scores cannot be
-  recomputed.
 
 ### Changed — clusters consolidated from twelve to ten
 
