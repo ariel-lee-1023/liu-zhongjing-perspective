@@ -7,6 +7,58 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.0] - 2026-08-15
+
+Nothing new was distilled in this release. Everything here comes from running the assembled
+package against live questions and rebuilding what the failures exposed. The measured coverage
+this release reports is much worse than the previous two, and the reason is in the method: the
+earlier scores were produced on question sets chosen by the distiller.
+
+### Changed — `references/frameworks.md` rebuilt around a method layer (10 sections → 8)
+
+- **New §一 "how to read a question"**, which the package previously had nowhere: false-premise
+  diagnosis, the four-step search for the explanatory layer, 格局—路径—节点 plus the
+  counterfactual-substitution test, "material is subordinate to the configuration", and the
+  read-the-compliment-backwards rule.
+- **New §七 "argumentative moves"**, consolidating the opening four-way choice, ventriloquism with
+  its density table, the six-step counterfactual baseline, **digression redefined as isomorphic-case
+  retrieval** (on topic = another run of the same subsystem, even two millennia and two
+  civilisations away; off topic = a different subsystem under the same topic heading, even if every
+  document is from the case at hand), and autobiographical material admitted only when it carries
+  an argument.
+- The old `§史料与记录` section was dissolved and its contents folded into the sections whose
+  reasoning they serve. §三 promotes 德性 from a definition to a causal node. Two deliberate
+  downgrades paid for the additions: `§个人层面` and `§守先待后` merged into an index of names with
+  definitions pointing back to `c01`/`c04`, and island-extrapolation merged with rattlesnake
+  lock-in in §二. **No judgement was lost; what was lost is quoted wording recoverable from the
+  clusters.** 4,834 → 5,999 est. tokens.
+- **No standing-positions library as a separate part.** The recurring concrete judgements are
+  inlined as `**定判**：` entries inside the relevant sections, with one 「常备定判」 entry at the
+  end of §六.
+
+### Changed — `SKILL.md` compressed, three gates added
+
+Compression only; the structure and all eleven parallel items are intact. 6,480 → 5,998 est.
+tokens. Three new gates: the first move on receiving a question is to check whether it presupposes
+a freedom of choice the speaker does not have; a pointer into `frameworks.md` §一 for the
+configuration/path/node test; and **look up the standing judgement before reasoning about a
+concrete object** — if one exists, follow it and do not re-derive on the spot.
+
+### Changed — `references/voice.md`
+
+- **A new prohibition on mid-course signposting**, listed separately from the existing one on
+  closing cushions: "我先动一下你这个提法", "讲到这儿我岔一段", "所以回到你的问题". Metadiscourse
+  markers measure 0 across the corpus. Forbidding closing cushions does not catch these.
+- Four fingerprints added to §一.3 (line-register for ventriloquised speech, pseudo-precision,
+  forced concretisation, mid-sentence self-correction); the cutting-down close added to §七; the
+  proper-name rule in §四 rewritten as **omnivory** — the old entry listed names that all fell
+  inside medieval/Inner-Asian history, which was overfitting, and the only stable rule is "not the
+  standard textbook for this question"; the metaphor stock widened from four wells to five with an
+  everyday/workplace well.
+- Two items were **reclassified out of voice and into framework**: substituting a concrete position
+  of interest for a moral judgement, and digression-as-isomorphic-retrieval. Autobiographical
+  material likewise belongs to framework.
+
 ### Changed — clusters consolidated from ten to nine
 
 - **Merged `c06-figures-written` and `c07-figures-lectures` into a single `c06-figures.md`.**
@@ -24,6 +76,69 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `c09-premodern-order` → `c08`, `c10-minguo-wenyan` → `c09`. All cross-references updated in
   `SKILL.md`, `references/frameworks.md` (the 〔cNN〕 provenance tags), `fidelity-ledger/episodic.md`
   and `README.md`.
+
+### Fidelity — five live tests, measured coverage 0.22 ± 0.02
+
+The measurement method changed. Batches 1–4 used post-hoc holdout with probes written by the
+distiller *after* reading the ground truth, which batch 4b had already logged as the leading
+defect. This release used **live tests**: the user supplies a real external question (mostly the
+actual questions put to him on a given programme), the package answers first, and the answer is
+then scored against his real reply. The ground truth exists independently before the answer is
+written, which closes the probe-from-truth channel.
+
+| Round | Domain | Score |
+|---|---|---|
+| 1 | current affairs + a concrete institution (defence industry, a Poly-group-type object) | 6/18 ≈ 0.33 |
+| 2 | birthright citizenship, the Fourteenth Amendment, the retreat from jus soli | 7/20 = 0.35 |
+| 3 | why civilisations without a new frontier decay; high-variance populations | 4/20 = 0.20 |
+| 4 | the direction of technical progress, longevity and AI, Harari's useless class | 5/23 ≈ 0.22 |
+| 5 | Confucius Institutes, overseas united-front work, the logic of agents | 4.5/19 ≈ 0.24 |
+
+**The last three rounds sit at 0.22 ± 0.02 across three unrelated domains.** That stability is the
+finding: it rules out "that question was hard" and points at a coverage ceiling. These numbers are
+**not** comparable with batch 3's 0.75 or batch 4b's 0.65 — those question sets were chosen by the
+distiller and skewed systematically towards historical and structural questions, never once
+towards a concrete institution, so both were probably inflated by selection.
+
+**Two metrics had been hidden under one number.** Round 4 read as the best round by eye while
+scoring 0.22, essentially level with round 3's 0.20. The reason is that *item coverage* (how many
+judgements in the ground truth were hit) and *trunk-hit rate* (whether the main line of the
+argument was hit) had been reported as a single figure. Round 4 hit three trunk items, round 3 hit
+none. The second metric is the meaningful one and will be reported separately from now on. The
+table above is item coverage.
+
+**One distiller attractor logged, not written into the package.** "Rights are exchanged for
+military service; universal suffrage arrives with total war" was used twice in five rounds and
+appears **zero** times in the corresponding ground truths. On re-checking the corpus it is **half
+true**: welfare-as-the-conquering-warrior's-pension and sovereignty-from-force-not-labour are solid
+and attested in `c02`, `c09` and the core; the extension to "European suffrage came out of total
+mobilisation — you can be conscripted to die, therefore you have a vote" **has no basis in the
+corpus** and was added by the distiller. His actual proposition is that those trained by war become
+the future rulers, which is reproduction of 德性, not a contractual exchange.
+
+**A defect traced to another persona file — a first for this project.** The session that produced
+this release had the user's own `liu-zhongjing-persona` skill loaded, and that skill explicitly
+instructs the agent to "pull back to the main thread with 回到刚才的问题" and to say 好了，讲到这里.
+Both are mid-course signposts; the corpus has none. The signposting drift observed across all five
+rounds traces directly to that instruction, and the new prohibition in `voice.md` §五 exists
+because of it.
+
+**Ten method defects are itemised in `fidelity-ledger/provenance.md`** (batch 5, §五), eight
+inherited. The two most consequential: no cross-corpus consistency check has ever been run, so a
+"ground truth" window may be contradicted elsewhere in his own work; and the question-type
+distribution has always been chosen by the distiller and is systematically skewed.
+
+### Known gaps
+
+- **Nothing was re-measured after the changes.** The 0.22 band is the score *before* this
+  release's edits. Two consecutive batches now carry unretested changes.
+- `SKILL.md`, `frameworks.md` and `voice.md` all sit between 5,996 and 5,999 against a 6,000
+  ceiling. All three are at the cap simultaneously: nothing can be added without deleting first.
+- The cross-corpus consistency check is still not done, and the reliability of the new `定判`
+  entries depends on it.
+- Female first-person register remains thin (carried since batch 4).
+- Trunk-hit rate was never recorded separately before this release, so earlier scores cannot be
+  recomputed.
 
 ### Changed — clusters consolidated from twelve to ten
 
