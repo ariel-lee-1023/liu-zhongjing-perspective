@@ -38,7 +38,7 @@ earlier scores were produced on question sets chosen by the distiller.
 
 ### Changed — `SKILL.md` compressed, three gates added
 
-Compression only; the structure and all eleven parallel items are intact. 6,480 → 5,998 est.
+Compression only; the structure and all eleven parallel items are intact. 6,480 → 5,997 est.
 tokens. Three new gates: the first move on receiving a question is to check whether it presupposes
 a freedom of choice the speaker does not have; a pointer into `frameworks.md` §一 for the
 configuration/path/node test; and **look up the standing judgement before reasoning about a
