@@ -7,6 +7,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed — fold-in batch 4: three clusters resized to budget, voice.md re-partitioned by register
+
+- **`c01-ayi-life-advice.md`, `c03-wadi-psychology.md`, and `c04-civilization-theory.md` extended from
+  well under the per-cluster soft budget to deliberately *above* soft budget and below the hard ceiling**
+  (c01 5,775 · c03 5,888 · c04 5,931 est. tokens; soft budgets ≈4,44x, hard ceiling 6,000). Their source
+  books (《阿姨我不想努力了》/《洼地与韭菜》/《文明更迭的源代码》) carry long causal chains rather than
+  loose opinion lists, and the budget formula saturates near 4,775 words, which is a conservative lower
+  bound for material of this density. The trade-off and its cost (no headroom left for future additions
+  without equivalent cuts) are logged in `fidelity-ledger/provenance.md` batch 4.
+- **`c04` no longer draws only on 第八章.** Chapters 一–七 are now represented: the Darwinian
+  epistemology (孤岛外推／火车头喷蒸汽, 响尾蛇式锁定, 观相术随脉象改药), the attrition model
+  (组织资源不可再生, 普遍进步＝既有积累的毁灭, 决断＝分娩, 霸主＝补丁), the seed-bank clauses
+  (黑匣子, 拉比阶级的重税, 压缩胶囊), order-as-growth (舞伴默契, 罗马法的阶段截面, 普通法可逆),
+  the six-step noun-dismantling template built on 绝对主义, and the nation-state consequences.
+- **`frameworks.md` extended with the new named constructs**, each tagged with its home cluster, plus two
+  new sections: 个人层面的可投射动作 (c01) and 守先待后的运作条款 (c04). Definitions stay solely in
+  frameworks; clusters carry usage only.
+- **`voice.md` rewritten around a three-way register partition (BREAKING for anyone quoting the old
+  baseline table).** The previous version averaged incommensurable distributions: a single "均值 32–38 汉字"
+  across all registers, a "全部著作（9 部）" weighted-average row, and one combined cell for
+  《民国纪事本末》＋《数卷残编》. The corpus is now split into **nine mutually exclusive register
+  directories** and measured separately with no cross-group weighting. 人物评传 is treated as a
+  spoken/written continuum and split per-file at 你/万汉字 < 10; the four oral-Q&A books are also measured
+  individually. Headline spreads per 10k 汉字: 你 0.22 → 150.95 (~680×), 连接词 0 → 13.4, hedge 1.4 → 46.5,
+  疑问号 4.6 → 38.4, 句长均 28.0 → 46.0.
+- **New explicit default rule in both `voice.md` and `SKILL.md`: the persona defaults to register family A
+  (oral Q&A, calibrated on 《洼地与韭菜》), switching to C (文言, with 《民国纪事本末》 as the extreme end)
+  only on explicit user request and to B (written 评传／史论) only for written-essay tasks.** Registers must
+  never be averaged, and rhetorical devices must not be generalized across them.
+- **Quantitative guardrails expanded from three to five and split by register family** (second person,
+  flagship jargon, hedge floor, connective words as a register switch, sentence length).
+- **Measurement caveat logged**: `zh_metrics.py`'s person-percentage columns are unreliable on 文言 (之/其
+  are counted as pronouns, producing a spurious 82.2% "first person" for 《民国纪事本末》). Classical-Chinese
+  register is now calibrated on absolute per-10k rates only.
+
 ### Changed
 - **`provenance.md` moved out of `references/` into a new top-level `fidelity-ledger/` folder.**
   `references/` is loaded by the host agent at runtime, so the honesty ledger now lives at
