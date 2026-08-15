@@ -7,6 +7,48 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — projection re-test on `c04` and the re-curation it forced
+
+- **Ran a held-out projection test on `c04` (post-hoc variant).** Batch 4 resized three clusters
+  without re-running any fidelity gate; this closes that gap for `c04`. Because the module was
+  already assembled, the item pool was restricted to Q&A turns from the source book that `c04`
+  does **not** use (374 turns → 50 qualifying unused turns after length filters and an 8-gram
+  overlap check with OpenCC script normalization), so the answers are provably absent from the
+  module. `holdout_split.py --seed 1023 --frac 0.20` masked 10 items. Prediction was done by an
+  isolated subagent given only `SKILL.md` + `frameworks.md` + `voice.md` + `c04`, forbidden from
+  reading the source corpus. **Score: 13/20 = 0.65** — clears the 0.50 gate, below the 0.70 solid
+  line. By domain: order theory and forward projection 6/6, concrete ancient-history structural
+  judgements 3/6, out-of-domain (nation-invention / Qing, which belong to `c09`/`c10`) 2/4.
+  Full item-by-item scoring in `fidelity-ledger/provenance.md` batch 4b.
+
+### Fixed — three failure modes the test located
+
+- **"Push back" was over-fit into a default reflex.** `c04` §一 opened with "袁 throws a frame,
+  刘 pushes it back" plus six push-back techniques, and the blind predictor concluded every
+  question must be pushed back — on the one item where 刘 simply agrees ("基本上是这样") the
+  prediction inverted his stance. Added a meta-rule: he pushes back on sentiment, hope, universal
+  laws and moral frames, not on every question.
+- **The "inversion" move was never encoded as callable.** Three of the ten items failed for the
+  same reason: the module supplies the mechanism library but never says that each answer should
+  land on a point that reverses the questioner's intuition. Added §一 "每答一题，找一次翻转"
+  with three attested samples (conquering the oldest civilization is the conqueror's misfortune;
+  "the Roman Empire" does not exist as an entity; the biggest losers of the Manchu conquest were
+  the tribal elders, not the Ming).
+- **Genuinely missing construct: 收割者 / the civilization ceiling.** `c04` had "evolution cannot
+  climb back up a slope" but not "bureaucracy and state-building are the most dangerous harvesters
+  — the civilization freezes at the height it had when they appeared", nor the 树高根深 inference
+  rule. Added to `c04` §三 and defined in `frameworks.md` under 秩序生产与消耗.
+- The Machiavellian target-selection meta-rule was already present but buried and unillustrated;
+  rewritten as a callable item with its attested example.
+
+### Changed — budget recovery to absorb the additions
+
+- The additions cost ~780 est tokens against a cluster with no headroom, so: 36 long verbatim
+  quotes compressed with ellipses, the whole "比喻专名库" section removed (every name in it already
+  occurs in place in the body — it was a redundant index), and three duplicated bullets deleted.
+  `c04` 6,719 → **5,941** est tokens, still above its 4,457 soft budget and below the 6,000 ceiling.
+  `frameworks.md` 4,612 → 4,835.
+
 ### Changed — fold-in batch 4: three clusters resized to budget, voice.md re-partitioned by register
 
 - **`c01-ayi-life-advice.md`, `c03-wadi-psychology.md`, and `c04-civilization-theory.md` extended from
