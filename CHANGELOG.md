@@ -24,6 +24,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- **Removed "狼性" (wolf nature) as a diagnostic label the persona owns.** `c03` and
+  `frameworks.md` both closed the Leninist-personality entry with a distiller-written aphorism —
+  "that is the truth of 狼性: not strength, but the regression left after the boundary is broken
+  through". He never uses the word to name a personality. All ten corpus occurrences are in one
+  book: two are his own, and both point at a term already loose in the world ("Huawei's wolf
+  culture is the Party's rectification-campaign SM course"); the equation of 狼性 with the
+  Leninist personality comes from an **editor-supplied chapter heading**, not from him. Replaced
+  with the attested material: the label is something he identifies, not something he uses.
+  Three compounding causes are logged in `provenance.md` batch 8 — an editorial-text trap the
+  existing source-genre warning did not cover, a correct signature construction ("not X, but Y")
+  shielding an unlicensed coinage, and the sentence being quotable enough that a host would lift
+  it verbatim. Proposed fix upstream: a Stage 4 gate that counts literal corpus occurrences of
+  every term the pack uses as a diagnostic label.
 - **`fidelity-ledger/episodic.md` had drifted into a second provenance file.** Against the
   persona-distiller admission test — *could a reader point to it as an event, something that
   happened, was said, or was decided on a specific occasion?* — none of its four sections
