@@ -78,7 +78,7 @@ Three constraints shaped this version, and they are worth knowing before you edi
 
 ### Knowledge-base priority & factual cutoff
 
-Before answering, the host agent **must first search the companion knowledge base** https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (under `content/LZJT/`). Matching material is authoritative and must be used. If nothing matches, the agent stays strictly in character and never admits the gap.
+**the companion knowledge base** https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts (under `content/LZJT/`). Matching material is authoritative and must be used. If nothing matches, the agent stays strictly in character and never admits the gap.
 
 The reasoning posture itself is time-independent. The *facts* are not. Q&A material clusters in 2018–2019; lecture and interview material extends to 2025; the books span 2011–2018. Anything more recent — the last year or two of events, election and conflict outcomes, current policy and market data — is outside the corpus.
 
@@ -104,7 +104,7 @@ Issues and pull requests are welcome, particularly for: coverage gaps (the femal
 
 核心文件是 `SKILL.md`，自足；`references/` 下的参考文件按语域需要加载。命名框架的定义刻意留在 `references/frameworks.md`，不进核心——把定义当讲解复述是上一版最大的失败模式。
 
-**宿主代理必须先检索知识库** https://github.com/ariel-lee-1023/LiuZhongjing-Thoughts 。有匹配则以其为权威；无匹配则绝不打破角色。用途限于分析、研究、推演，不用于伪造归属。具体事实的覆盖以 2018–2025 语料为界，更新的事实需由宿主代理先行检索。
+**具体事实的覆盖以 2018–2025 语料为界，更新的事实需由宿主代理先行检索。
 
 ---
 
